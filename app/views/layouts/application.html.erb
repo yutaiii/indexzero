@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Indexzero</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header id="header" class="header">
+    <a href="/"><div class="header_logo">
+      indexzero
+    </div></a>
+
+    <div class="header_box">
+      <ul>
+        <% if user_signed_in? %>
+          <li class="header_box_menu">
+           <%= link_to '投稿する', new_post_path %>
+          </li>
+          <li class="header_box_menu">
+           <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+          </li>
+        <% else %>
+          <li class="header_box_menu">
+           <%= link_to 'ログイン', new_user_session_path %>
+          </li>
+          <li class="header_box_menu">
+           <%= link_to '新規登録', new_user_registration_path %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </header><!-- /header -->
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+
+  <div class="main">
+    <div class="main_left">
+    aaaa
+    </div>
+
+    <div class="main_center">
+
+    <%= yield %>
+
+    </div>
+
+    <div class="main_right">
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+// ==============header==========
+
+.header{
+  width: 100%;
+  height: 60px;
+  background-color: #00e673;
+  float: left;
+
+  &_logo{
+    width: 20%;
+    float: left;
+    font-size: 30px;
+    color: white;
+    line-height: 60px;
+    margin-left: 50px;
+  }
+
+  &_box{
+    float: right;
+    margin-right: 50px;
+
+    &_menu{
+      height: 100%;
+      line-height: 60px;
+      float: left;
+      width: 100px;
+      text-align: center;
+
+      & a{
+        text-decoration: none;
+        display: block;
+        color: white;
+        width: inherit;
+        height: inherit;
+        transition: 0.2s;
+
+        &:hover{
+          background-color: #66ff66;
+          font-size: 18px;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.main{
+  height: 100%;
+
+  &_left{
+    width: 15%;
+    height: 100%;
+    float: left;
+    background-color: green;
+  }
+
+  &_center{
+    width: 70%;
+    height: 100%;
+    float: left;
+  }
+
+  &_right{
+    width: 15%;
+    height: 100%;
+    float: left;
+    background-color: green;
+  }
+
+}
