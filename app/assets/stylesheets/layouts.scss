@@ -44,27 +44,8 @@
   }
 }
 
-.main{
-  height: 100%;
-
-  &_left{
-    width: 15%;
-    height: 100%;
-    float: left;
-    background-color: green;
-  }
-
-  &_center{
-    width: 70%;
-    height: 100%;
-    float: left;
-  }
-
-  &_right{
-    width: 15%;
-    height: 100%;
-    float: left;
-    background-color: green;
-  }
-
+.main_container{
+  width: 100%;
+  position: relative;
 }
+
